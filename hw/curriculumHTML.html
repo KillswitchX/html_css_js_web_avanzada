@@ -16,6 +16,9 @@
 	<!-- Google Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
+    <!-- W3 CSS-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
 </head>
 
 <body>
@@ -27,7 +30,7 @@
 
         <!--Header-->
 		<div id="header-info">
-			<img id ="profile_pic" src="./picture.jpg" width="150" height="180">
+			<img id ="profile_pic" src="./picture.jpg" width="150" height="180"  >
 			<div id="header-content">
 				<h1 id="header-name">Johann Yaqueno</h1>
                 <h3 id="header-characteristics">Front-end Developer,  Apps Developer</h3>
@@ -136,13 +139,79 @@
 					<span class="roboto-text">Rotaract Club Member</span>
 				</div>
             </div>
+            
             <!--Technical Skills Container-->
 			<div id="technical-skills">
 				<h2> <i class="material-icons">computer</i> Technical Skills</h2>
             </div>
+
+            <div class="row">
+                <div class="column">
+                    <div class="w3-card w3-margin-right w3-margin-bottom w3-padding" onclick="displayOn()" >
+                        <div class="sub" >Front-end</div>
+                        <div class="roboto-text">HTML5, CSS, SASS, JS , Typescript</div>
+                        <br>
+                      </div>
+                </div>
+                <div class="column">
+                    <div class="w3-card w3-margin-right w3-margin-bottom w3-padding" onclick="displayOn()" >
+                        <div class="sub">Back-end</div>
+                        <div class="roboto-text">NodeJs, C#, Java</div>
+                        <br>
+                      </div>
+                </div>
+                <div class="column">
+                    <div class="w3-card w3-margin-right w3-margin-bottom w3-padding" onclick="displayOn()" >
+                        <div class="sub">Frameworks</div>
+                        <div class="roboto-text">Bootstrap, Primefaces</div>
+                        <br>
+                      </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="column">
+                    <div class="w3-card w3-margin-right w3-margin-bottom w3-padding" onclick="displayOn()" >
+                        <div class="sub">Wireframes and prototypes</div>
+                        <div class="roboto-text">Adobe XD, Sketch</div>
+                        <br>
+                      </div>
+                </div>
+                <div class="column">
+                    <div class="w3-card w3-margin-right w3-margin-bottom w3-padding" onclick="displayOn()" >
+                        <div class="sub">Others</div>
+                        <div class="roboto-text">Github, Responsive Design, basic SEO, Agile Methodologies, Vagrant </div>
+                        
+                      </div>
+                </div>
+            </div>
+            
+
             
         </div>
         
-	</div>
+
+    </div>
+    
+        <div id="overlay" onclick="displayOff()">
+            <div id="overlay-text">Overlay Text</div>
+        </div>
+    
+
+        <!--Show dialog -->
+        <script>
+            function displayOn() {
+                document.getElementById("overlay").style.display = "block";
+
+
+            }
+            function displayOff() {
+                document.getElementById("overlay").style.display = "none";
+            }
+
+        </script>
+
+
+
 </body>
 </html>

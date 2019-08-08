@@ -1,6 +1,7 @@
 #macro-container {
-	width: 750px;
 	border: 1px solid  gray;
+	width: 900px; 
+	margin: 0 auto; 
 }
 
 #profile_pic{
@@ -37,7 +38,7 @@
     float: right;
     margin-left: 0px;
 	margin-right: 0px;
-	margin-top: 30px;
+	margin-top: 20px;
 	font-family: 'Roboto', sans-serif;
     font-size: 14px;
     opacity: 0.75;
@@ -48,7 +49,7 @@
     list-style: none;
     opacity: 0.85;
     margin-left: 0px;
-	margin-top: 30px;
+	margin-top: 20px;
 	padding: 0px;
 }
 
@@ -84,9 +85,7 @@
 }
 
 body {
-    width: 1000px;
-    border-block-color: solid black;
-	margin: 0 auto;
+
 	display: flex;
     justify-content: center;
     
@@ -94,7 +93,7 @@ body {
 
 #body {
 	padding-left: 20px;
-	padding-right: 38px;
+	padding-right: 50px;
 }
 
 
@@ -109,7 +108,7 @@ h1 {
 h2 {
 	text-transform: uppercase;
 	font-family: 'Oswald', sans-serif;
-	font-size: 16px;
+	font-size: 14px;
     color: #01887A;
     font-weight: 999;
 
@@ -129,6 +128,79 @@ p {
 #education {
 	margin-bottom: 20px;
 }
+
+#education h2{
+	text-transform: uppercase;
+	font-family: 'Oswald', sans-serif;
+	font-size: 22px;
+    color: #01887A;
+    font-weight: 333;
+}
+
+#professional-experience h2{
+	text-transform: uppercase;
+	font-family: 'Oswald', sans-serif;
+	font-size: 22px;
+    color: #01887A;
+    font-weight: 333;
+}
+
+#courses-certificates h2{
+	text-transform: uppercase;
+	font-family: 'Oswald', sans-serif;
+	font-size: 22px;
+    color: #01887A;
+    font-weight: 333;
+}
+
+#volunteer-works{
+	margin-top: 20px;
+}
+
+#volunteer-works h2{
+	text-transform: uppercase;
+	font-family: 'Oswald', sans-serif;
+	font-size: 22px;
+    color: #01887A;
+    font-weight: 333;
+}
+
+#languages h2{
+	margin-top: 20px;
+	text-transform: uppercase;
+	font-family: 'Oswald', sans-serif;
+	font-size: 22px;
+    color: #01887A;
+    font-weight: 333;
+}
+
+#on-web h2{
+	margin-top: 20px;
+	text-transform: uppercase;
+	font-family: 'Oswald', sans-serif;
+	font-size: 22px;
+    color: #01887A;
+    font-weight: 333;
+}
+
+#info h2{
+	margin-top: 20px;
+	text-transform: uppercase;
+	font-family: 'Oswald', sans-serif;
+	font-size: 22px;
+    color: #01887A;
+    font-weight: 333;
+}
+
+#technical-skills h2{
+	margin-top: 20px;
+	text-transform: uppercase;
+	font-family: 'Oswald', sans-serif;
+	font-size: 22px;
+    color: #01887A;
+    font-weight: 333;
+}
+
 
 .sub {
 	font-family: 'Roboto', sans-serif;
@@ -171,4 +243,43 @@ p {
 
 h2 .material-icons{
     vertical-align: middle;
+}
+
+
+.row {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+  }
+  
+  .column {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 100%;
+	flex: 1;
+  }
+
+  #overlay {
+    position: fixed; 
+    display: none; 
+    width: 100%; 
+    height: 100%; 
+    top: 0; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); 
+    z-index: 2; 
+    cursor: pointer; 
+	} 
+	
+#overlay-text{
+	position: absolute;
+    top: 50%;
+    font-size: 50px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    -ms-transform: translate(-50%,-50%);
 }
